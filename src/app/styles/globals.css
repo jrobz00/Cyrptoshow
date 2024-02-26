@@ -3,24 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255; /* Define white background color */
+  --foreground-rgb: var(---custom-black);
+  --background-rgb: 255, 255, 255;
+  ---custom-red: #e93835;
+  ---custom-black: #101319;
+  ---custom-green: #56e39f;
+  color: var(---custom-black);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-rgb: 255, 255, 255; /* Define white background color */
+    --foreground-rgb: var(---custom-black);
+    --background-rgb: 255, 255, 255;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb)); /* Set background color */
+  background-color: rgb(var(--background-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  .h1-custom {
+    @apply font-semibold text-[80px] tracking-[0.2rem] leading-tight; /* Adjust size and line spacing as needed */
+  }
+
+  @screen sm {
+  }
+  @screen md {
+  }
+
+  @screen lg {
   }
 }
