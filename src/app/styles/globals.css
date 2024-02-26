@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animations */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0); /* Start at current position */
+  }
+  100% {
+    transform: translateY(-10px); /* Float up by 20px */
+  }
+}
+
+@keyframes breath {
+  0% {
+    transform: translateX(0); /* Start at current position */
+  }
+  100% {
+    transform: translateX(5px); /* Float up by 20px */
+  }
+}
+
+/* Styles */
 :root {
   --foreground-rgb: var(---custom-black);
   --background-rgb: 255, 255, 255;
@@ -9,6 +29,7 @@
   ---custom-black: #101319;
   ---custom-green: #56e39f;
   color: var(---custom-black);
+  tracking: 0.1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,11 +50,29 @@ body {
   }
 }
 
-@layer base {
-  .h1-custom {
-    @apply font-semibold text-[80px] tracking-[0.2rem] leading-tight; /* Adjust size and line spacing as needed */
-  }
+.delayed {
+  animation-delay: 1s; /* Delay the animation by 2 seconds */
+}
 
+.floating-item {
+  position: relative;
+  animation: floatUpDown 2.5s infinite alternate ease-in-out; /* Define animation */
+}
+
+.breath-item {
+  position: relative;
+  animation: breath 0.5s infinite alternate; /* Define animation */
+}
+
+.h1-custom {
+  @apply mb-4 leading-tight tracking-[0.1rem] text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl; /* Adjust size and line spacing as needed */
+}
+
+.h2-custom {
+  @apply text-center text-2xl font-bold text-gray-800 sm:text-4xl md:mb-6 md:text-left leading-tight; /* Adjust size and line spacing as needed */
+}
+
+@layer base {
   @screen sm {
   }
   @screen md {
