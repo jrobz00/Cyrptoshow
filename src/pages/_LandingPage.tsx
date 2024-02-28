@@ -102,15 +102,15 @@ export default function LandingPage() {
                 </h1>
 
                 <p className="mb-4 max-w-md leading-relaxed text-gray-500 xl:text-lg">
-                  It takes <b>7s</b> for a customer to form an impression.
+                  It takes <b>7s</b> for a customer to form an impression
+                  Discover how we can make it a lasting one
                   <br />
-                  {/* Make it a lasting one */}
                 </p>
 
                 <Button
-                  text="Discover how we can help"
+                  text="Get Started ➜"
                   href="#"
-                  className="w-[200px] md:w-[250px]"
+                  className="w-[150px]"
                 ></Button>
               </div>
 
