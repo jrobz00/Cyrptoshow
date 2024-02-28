@@ -10,7 +10,6 @@ import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Head } from 'next/document'
 
 export default function LandingPage() {
   return (
