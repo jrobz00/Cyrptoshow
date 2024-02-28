@@ -1,5 +1,6 @@
 import React from 'react'
 import '../app/styles/globals.css'
+import Image from 'next/image'
 
 export default function ComingSoon() {
   return (
@@ -14,10 +15,11 @@ export default function ComingSoon() {
             <p className="mb-4 text-center text-xl  text-gray-800 md:mb-6 lg:text-xl">
               Check back soon for updates
             </p>
-            <img
+            <Image
+              alt="in development icon"
               src="/images/InDevelopment.png"
               className="m-auto floating-item relative "
-            ></img>
+            ></Image>
           </div>
         </div>
       </div>

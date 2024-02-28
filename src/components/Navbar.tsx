@@ -1,5 +1,6 @@
 import React, { MouseEvent } from 'react'
 import Button from './Button'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -15,24 +16,24 @@ const Navbar = () => {
       <div className="flex ">
         {/* nav - start */}
         <nav className="hidden gap-12 lg:flex items-center">
-          <a
+          <Link
             href="/ComingSoon"
             className="text-lg font-semibold text-custom-black transition duration-100 hover:text-indigo-500 active:text-indigo-700"
           >
             How it works
-          </a>
-          <a
+          </Link>
+          <Link
             href="/ComingSoon"
             className="text-lg font-semibold text-custom-black  transition duration-100 hover:text-indigo-500 active:text-indigo-700"
           >
             Pricing
-          </a>
-          <a
+          </Link>
+          <Link
             href="/ComingSoon"
             className="text-lg font-semibold text-custom-black  transition duration-100 hover:text-indigo-500 active:text-indigo-700"
           >
             About us
-          </a>
+          </Link>
           <Button
             text="Sign in"
             href="/ComingSoon"

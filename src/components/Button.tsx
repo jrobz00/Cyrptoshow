@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { MouseEvent } from 'react'
 
 interface ButtonProps {
@@ -13,9 +14,9 @@ const Button = ({ text, href, className }: ButtonProps) => {
   const combinedClasses = `${defaultClasses} ${className}`
 
   return (
-    <a href={href} className={combinedClasses}>
+    <Link href={href} className={combinedClasses}>
       {text}
-    </a>
+    </Link>
   )
 }
 

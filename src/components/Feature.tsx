@@ -1,6 +1,7 @@
 import React, { MouseEvent, ReactNode } from 'react'
 import { SvgIconTypeMap } from '@mui/material'
 import { OverridableComponent } from '@mui/material/OverridableComponent'
+import Link from 'next/link'
 
 interface FeatureProps {
   headline: string
@@ -25,12 +26,12 @@ const Feature = ({ headline, body, icon, className }: FeatureProps) => {
         {headline}
       </h3>
       <p className="mb-2 text-center text-gray-500">{body}</p>
-      <a
-        href="#"
+      <Link
+        href="/ComingSoon"
         className="font-bold text-secondary transition duration-100 hover:text-indigo-600 active:text-indigo-700"
       >
         More
-      </a>
+      </Link>
     </div>
   )
 }
