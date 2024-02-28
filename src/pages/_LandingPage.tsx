@@ -10,6 +10,7 @@ import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Head } from 'next/document'
 
 export default function LandingPage() {
   return (
@@ -27,9 +28,9 @@ export default function LandingPage() {
             </h1>
 
             <p className="mb-4 max-w-md leading-relaxed text-gray-500 xl:text-lg">
-              It takes <b>7s</b> for a customer to form an impression Discover
-              how we can make it a lasting one
+              It takes <b>7s</b> for a customer to form an impression
               <br />
+              Discover how we can make it a lasting one
             </p>
 
             <Button
@@ -231,8 +232,7 @@ export default function LandingPage() {
                 {/* logo - end */}
 
                 <p className="mb-6 text-gray-500 sm:pr-8">
-                  Filler text is dummy text which has no meaning however looks
-                  very similar to real text
+                  © Copyright 2023 Brandlift - All Rights Reserved
                 </p>
 
                 {/* social - start */}
