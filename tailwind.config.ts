@@ -18,9 +18,8 @@ const config: Config = {
         '5xl': '5rem',
       },
       colors: {
-        'custom-red': '#e93835',
-        'custom-black': '#101319',
-        'custom-green': '#56e39f',
+        primary: '#22BBEA',
+        secondary: '#2F4858',
       },
 
       backgroundImage: {
@@ -33,9 +32,3 @@ const config: Config = {
   plugins: [],
 }
 export default config
-
-
-
-
-
-
