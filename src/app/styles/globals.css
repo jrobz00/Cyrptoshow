@@ -25,9 +25,9 @@
 :root {
   --foreground-rgb: var(---custom-black);
   --background-rgb: 255, 255, 255;
-  ---custom-red: #e93835;
   ---custom-black: #101319;
-  ---custom-green: #56e39f;
+  --primary: '#22BBEA';
+  --secondary: '#2F4858';
   color: var(---custom-black);
   tracking: 0.1rem;
 }
