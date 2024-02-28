@@ -8,8 +8,8 @@ import FaceIcon from '@mui/icons-material/Face'
 import VolcanoIcon from '@mui/icons-material/Volcano'
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople'
 import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function LandingPage() {
   return (
@@ -44,6 +44,8 @@ export default function LandingPage() {
               <Image
                 src="/images/LandingPageFloatingImageFront.png"
                 loading="lazy"
+                width="550"
+                height="550"
                 alt="3D world wide web"
                 className="h-full w-full object-cover object-center"
               />
@@ -53,6 +55,8 @@ export default function LandingPage() {
               <Image
                 src="/images/LandingPageFloatingImageBack.png"
                 loading="lazy"
+                width="550"
+                height="550"
                 alt="3D designer"
                 className="h-full w-full object-cover object-center"
               />
@@ -220,6 +224,8 @@ export default function LandingPage() {
                     className=" min-h-[25px] max-h-[25px] h-[5vh]"
                     src="/images/logo.png"
                     alt="Logo"
+                    width="133"
+                    height="25"
                   />
                 </div>
                 {/* logo - end */}

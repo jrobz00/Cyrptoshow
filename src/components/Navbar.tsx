@@ -1,15 +1,18 @@
 import React, { MouseEvent } from 'react'
 import Button from './Button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navbar = () => {
   return (
     <header className="mb-4 flex items-center justify-between py-4 md:py-8">
       {/* logo - start */}
-      <img
+      <Image
         className=" min-h-[25px] max-h-[25px] h-[5vh]"
         src="/images/logo.png"
         alt="Logo"
+        width="133"
+        height="25"
       />
       {/* logo - end */}
 
