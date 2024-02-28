@@ -10,7 +10,7 @@ export default function ComingSoon() {
           {/* <!-- text - start --> */}
           <div className="mb-10 md:mb-16">
             <h2 className="mb-2 text-center text-2xl font-bold text-gray-800 md:mb-2 lg:text-3xl">
-              Sorry, we're still in development
+              Sorry, we&apos;re are still in development
             </h2>
             <p className="mb-4 text-center text-xl  text-gray-800 md:mb-6 lg:text-xl">
               Check back soon for updates
@@ -18,6 +18,8 @@ export default function ComingSoon() {
             <Image
               alt="in development icon"
               src="/images/InDevelopment.png"
+              width="500"
+              height="500"
               className="m-auto floating-item relative "
             ></Image>
           </div>
