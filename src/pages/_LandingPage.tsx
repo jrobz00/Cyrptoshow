@@ -231,7 +231,7 @@ export default function LandingPage() {
                 {/* logo - end */}
 
                 <p className="mb-6 text-gray-500 sm:pr-8">
-                  © Copyright 2023 Brandlift - All Rights Reserved
+                  First Impressions Count
                 </p>
 
                 {/* social - start */}
@@ -493,7 +493,7 @@ export default function LandingPage() {
             </div>
 
             <div className="border-t py-8 text-center text-sm text-gray-400">
-              © 2021 - Present Flowrift. All rights reserved.
+              © Copyright 2023 Brandlift - All Rights Reserved
             </div>
           </div>
         </div>
