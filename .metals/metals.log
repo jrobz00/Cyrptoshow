@@ -285,3 +285,5 @@ create table fingerprints(
 17:22:01.622 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 48 of 100M
 2024.04.09 17:22:01 WARN  no build tool detected in workspace '/Users/josephrobinson/Desktop/Joe/Group Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 2024.04.09 17:22:01 WARN  Build server is not auto-connectable.
+Apr 09, 2024 5:44:38 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
